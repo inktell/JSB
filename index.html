@@ -1,11 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luxe Accessories - Phụ Kiện Cao Cấp</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>truongletien</h1>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-icon">■</span>
+                <span class="brand-text">LUXE ACCESSORIES</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Về Chúng Tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-link" href="#cart">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark btn-appointment" href="#appointment">Đặt Lịch Tư Vấn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="hero-title">Phong cách tinh tế<br>gặp gỡ chất lượng vượt trội</h1>
+                    <p class="hero-subtitle">Khám phá bộ sưu tập phụ kiện cao cấp được tuyển chọn<br>để hoàn thiện phong cách của bạn</p>
+                    <div class="hero-cta mt-5">
+                        <a href="#products" class="cta-link">
+                            <span>KHÁM PHÁ BỘ SƯU TẬP</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 16 16 12 12 8"></polyline>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </a>
+                        <a href="#about" class="cta-link ms-5">
+                            <span>TÌM HIỂU THÊM</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 16 16 12 12 8"></polyline>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/placeholder.svg?height=800&width=600" alt="Luxury Accessories">
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories-section py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <div class="category-number">1</div>
+                        <h3 class="category-title">Túi Xách</h3>
+                        <p class="category-desc">Bộ sưu tập túi xách da cao cấp từ các thương hiệu hàng đầu</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <div class="category-number">2</div>
+                        <h3 class="category-title">Đồng Hồ</h3>
+                        <p class="category-desc">Đồng hồ chính hãng với thiết kế tinh xảo và độ chính xác cao</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <div class="category-number">3</div>
+                        <h3 class="category-title">Trang Sức</h3>
+                        <p class="category-desc">Trang sức cao cấp làm từ vàng, bạc và đá quý tự nhiên</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <div class="category-number">4</div>
+                        <h3 class="category-title">Ví & Thắt Lưng</h3>
+                        <p class="category-desc">Phụ kiện da thật với chất lượng và độ bền vượt trội</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Sản phẩm nổi bật</h2>
+                <p class="section-subtitle">Được tuyển chọn kỹ lưỡng cho phong cách của bạn</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/403/511/products/o1cn01pgmjlq28fjk9j3chn6227579-cc736e20-a5cc-4718-8904-422a72b3e63f.jpg" alt="Túi Xách Da Cao Cấp" class="img-fluid">
+                            <div class="product-badge">MỚI</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Túi Xách Da Milano</h3>
+                            <p class="product-category">Túi Xách</p>
+                            <div class="product-footer">
+                                <span class="product-price">4.500.000₫</span>
+                                <button class="btn-add-cart">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://donghotantan.vn/images/news/2023/08/12/large/cac-thuong-hieu-dong-ho-thuy-sy-gia-re_1691839088.jpeg" alt="Đồng Hồ Thụy Sỹ" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Đồng Hồ Chronograph</h3>
+                            <p class="product-category">Đồng Hồ</p>
+                            <div class="product-footer">
+                                <span class="product-price">12.800.000₫</span>
+                                <button class="btn-add-cart">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtJJOSLk36R-ewODki83GYKVVTM1jVLMHuWw&s" alt="Vòng Tay Vàng" class="img-fluid">
+                            <div class="product-badge">BÁN CHẠY</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Vòng Tay Vàng 18K</h3>
+                            <p class="product-category">Trang Sức</p>
+                            <div class="product-footer">
+                                <span class="product-price">8.200.000₫</span>
+                                <button class="btn-add-cart">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.gento.vn/wp-content/uploads/2021/09/vi-da-nam-V070.jpg" alt="Ví Da Cao Cấp" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Ví Da Handmade</h3>
+                            <p class="product-category">Ví & Thắt Lưng</p>
+                            <div class="product-footer">
+                                <span class="product-price">1.800.000₫</span>
+                                <button class="btn-add-cart">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqWSqIHn1m-SK6HmPbSgtLnsIIgVvbPI74FQ&s" alt="Dây Chuyền Ngọc Trai" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Dây Chuyền Ngọc Trai</h3>
+                            <p class="product-category">Trang Sức</p>
+                            <div class="product-footer">
+                                <span class="product-price">6.500.000₫</span>
+                                <button class="btn-add-cart">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZplreNWEaACw6A829oa8u6JWOUGrSz4-KMg&s" alt="Thắt Lưng Da" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Thắt Lưng Da Ý</h3>
+                            <p class="product-category">Ví & Thắt Lưng</p>
+                            <div class="product-footer">
+                                <span class="product-price">2.200.000₫</span>
+                                <button class="btn-add-cart">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/placeholder.svg?height=600&width=800" alt="Craftsmanship" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="about-title">Kết hợp sự tinh tế, bền vững và hiệu quả</h2>
+                    <p class="about-text">Chúng tôi tin rằng phụ kiện không chỉ là món đồ trang trí, mà là biểu tượng của phong cách và cá tính. Mỗi sản phẩm được tuyển chọn kỹ lưỡng từ các thương hiệu uy tín, đảm bảo chất lượng cao nhất.</p>
+                    <p class="about-text">Với hơn 10 năm kinh nghiệm trong ngành phụ kiện cao cấp, chúng tôi cam kết mang đến cho khách hàng những sản phẩm chính hãng, độc đáo và phù hợp với phong cách riêng của từng người.</p>
+                    <a href="#contact" class="btn btn-dark mt-4">Liên Hệ Ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Phong cách toàn diện cho tương lai</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo9kaCSNTkz6IRuU1nQu_62W6PfT3fi3nUfw&s" alt="Gallery 1" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Túi Xách</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Swatch_Irony_Charcoal_Suit.jpg/250px-Swatch_Irony_Charcoal_Suit.jpg" alt="Gallery 2" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Đồng Hồ</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://tnj.vn/57030-large_default/bo-trang-suc-bac-cao-cap-nu-bts0064.jpg" alt="Gallery 3" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h3>Trang Sức</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="contact-title">Hãy nói về dự án của bạn</h2>
+                    <a href="#appointment" class="btn btn-dark btn-lg mt-4">Đặt Lịch Tư Vấn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">LUXE ACCESSORIES</h5>
+                    <p class="footer-text">Phụ kiện cao cấp cho phong cách hoàn hảo</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="footer-heading">Sản Phẩm</h6>
+                    <ul class="footer-links">
+                        <li><a href="#products">Túi Xách</a></li>
+                        <li><a href="#products">Đồng Hồ</a></li>
+                        <li><a href="#products">Trang Sức</a></li>
+                        <li><a href="#products">Ví & Thắt Lưng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="footer-heading">Thông Tin</h6>
+                    <ul class="footer-links">
+                        <li><a href="#about">Về Chúng Tôi</a></li>
+                        <li><a href="#contact">Liên Hệ</a></li>
+                        <li><a href="#">Chính Sách</a></li>
+                        <li><a href="#">Điều Khoản</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-heading">Liên Hệ</h6>
+                    <ul class="footer-contact">
+                        <li>contact@luxeaccessories.vn</li>
+                        <li>+84 123 456 789</li>
+                        <li>123 Đường ABC, Quận 1, TP.HCM</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">© 2025 Luxe Accessories. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
