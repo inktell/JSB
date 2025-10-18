@@ -518,3 +518,101 @@ img {
     font-size: 2rem;
   }
 }
+
+/* assets/css/auth.css */
+
+/* Nhập font chữ đã định nghĩa trong HTML */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #343a40; /* Màu tối chính, gần với màu navbar */
+    --secondary-color: #6c757d; /* Màu chữ phụ */
+    --accent-color: #a67c52; /* Màu nhấn mạ vàng/đồng */
+    --light-bg: #f8f9fa; /* Màu nền nhẹ */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    font-family: var(--font-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.auth-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    margin: 1.5rem;
+}
+
+.auth-logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.auth-title {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Định kiểu cho input */
+.form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(166, 124, 82, 0.25); /* Tông màu nhấn nhẹ */
+}
+
+/* Định kiểu cho nút bấm */
+.btn-auth {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    width: 100%;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-auth:hover {
+    background-color: #5a6268; /* Màu tối hơn khi hover */
+    border-color: #5a6268;
+    color: white;
+}
+
+.btn-auth:focus {
+    box-shadow: 0 0 0 0.25rem rgba(52, 58, 64, 0.5);
+}
+
+/* Kiểu chữ liên kết */
+.auth-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.auth-link:hover {
+    color: var(--primary-color);
+}
