@@ -1,0 +1,115 @@
+/* =========================================================================
+   AUTH FORMS STYLES (Dựa trên chủ đề Luxe Accessories)
+   ========================================================================= */
+
+/* 1. Body & Container Setup */
+body {
+    /* Đảm bảo trang form chỉ có nền phụ, không bị ảnh hưởng bởi các style body chính */
+    background-color: var(--color-secondary, #f5f5f0); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+    font-family: var(--font-body, "Inter", sans-serif);
+}
+
+/* 2. Form Container */
+#registerForm { /* Áp dụng cho cả form Đăng nhập và Đăng ký */
+    background-color: var(--color-white, #ffffff);
+    padding: 40px;
+    border-radius: 4px; /* Góc bo nhẹ nhàng */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05); /* Bóng đổ tinh tế */
+    width: 100%;
+    max-width: 420px; /* Chiều rộng form lý tưởng */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các phần tử */
+}
+
+/* 3. Form Heading (Bạn nên thêm <h2> với class này vào form) */
+.form-title {
+    font-family: var(--font-heading, "Playfair Display", serif);
+    font-size: 2rem;
+    font-weight: 400; /* Đồng bộ với tiêu đề chính */
+    color: var(--color-primary, #1a1a1a);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* 4. Input Fields */
+#registerForm input[type="email"],
+#registerForm input[type="password"],
+#registerForm input[type="text"] {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid var(--color-border, #e0e0e0);
+    border-radius: 2px; /* Góc bo nhẹ */
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: var(--color-text, #2c2c2c);
+    transition: var(--transition);
+}
+
+/* Hiệu ứng focus: làm nổi bật với màu accent (Vàng Đồng) */
+#registerForm input:focus {
+    border-color: var(--color-accent, #8b7355);
+    box-shadow: 0 0 0 1px var(--color-accent, #8b7355);
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* 5. Submit Button */
+#registerForm button[type="submit"] {
+    background-color: var(--color-primary, #1a1a1a); /* Màu nền Đen */
+    color: var(--color-white, #ffffff);
+    border: 1px solid var(--color-primary, #1a1a1a);
+    padding: 14px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+/* Hiệu ứng hover: chuyển sang màu Vàng Đồng nhấn */
+#registerForm button[type="submit"]:hover {
+    background-color: var(--color-accent, #8b7355);
+    border-color: var(--color-accent, #8b7355);
+    color: var(--color-white, #ffffff);
+}
+
+/* Nếu bạn muốn tạo một nút "Quay lại/Chuyển sang đăng ký" */
+.form-link-area {
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link {
+    font-size: 0.9rem;
+    color: var(--color-text-light, #6b6b6b);
+}
+.form-link a {
+    color: var(--color-accent, #8b7355);
+    font-weight: 500;
+}
+.form-link a:hover {
+    color: var(--color-primary, #1a1a1a);
+}
+
+/* =========================================================================
+   RESPONSIVE
+   ========================================================================= */
+@media (max-width: 480px) {
+    #registerForm {
+        padding: 30px 20px;
+        gap: 12px;
+    }
+
+    .form-title {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+    }
+}
